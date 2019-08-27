@@ -1,5 +1,9 @@
 <?php
 
+define("FS_METHOD", "direct");
+define("FS_CHMOD_DIR", 0777);
+define("FS_CHMOD_FILE", 0777);
+
 //Begin Really Simple SSL Load balancing fix
 if ((isset($_ENV["HTTPS"]) && ("on" == $_ENV["HTTPS"]))
 || (isset($_SERVER["HTTP_X_FORWARDED_SSL"]) && (strpos($_SERVER["HTTP_X_FORWARDED_SSL"], "1") !== false))
