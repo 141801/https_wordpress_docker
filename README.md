@@ -1,10 +1,11 @@
 # https_wordpress_docker
 
 ## generate pem for https
-* cd renewcer/
+* cd renewcer/  #/home/https_wordpress_docker/renewcer/
 
 修改docker-compose里面的域名（例 vraku.work）
-
+* docker system prune
+* docker system prune --volumes
 * docker-compose up #console1
 
 在/docker-volumes里面生成pem文件(另一个控制台console2)
@@ -12,13 +13,13 @@
 * sudo docker run -it --rm \
 -v /docker-volumes/etc/letsencrypt:/etc/letsencrypt \
 -v /docker-volumes/var/lib/letsencrypt:/var/lib/letsencrypt \
--v /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site:/data/letsencrypt \
+-v /home/https_wordpress_docker/renewcer/my-site:/data/letsencrypt \
 -v "/docker-volumes/var/log/letsencrypt:/var/log/letsencrypt" \
 certbot/certbot \
 certonly --webroot \
 --email youremail@domain.com --agree-tos --no-eff-email \
 --webroot-path=/data/letsencrypt \
--d vraku.work -d www.vraku.work
+-d yongzhu.work -d www.yongzhu.work
 
 
 * docker-compose down #console1
