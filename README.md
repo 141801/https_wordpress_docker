@@ -3,7 +3,7 @@
 ## generate pem for https
 * cd renewcer/  #/home/https_wordpress_docker/renewcer/
 
-修改docker-compose里面的域名（例 vraku.work）
+修改docker-compose里面的域名
 * docker system prune
 * docker system prune --volumes
 * docker-compose up #console1
