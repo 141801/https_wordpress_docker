@@ -9,7 +9,7 @@ services:
       - "80:80"
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
-      - ./letsencrypt-site:/usr/share/nginx/html
+      - ./my-site:/usr/share/nginx/html
     networks:
       - docker-network
 

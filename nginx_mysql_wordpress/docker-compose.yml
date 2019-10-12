@@ -16,8 +16,8 @@ services:
       - ./nginx/log:/var/log/nginx
       - ./wordpress:/var/www/html
       - ./dh-param/dhparam-2048.pem:/etc/ssl/certs/dhparam-2048.pem
-      - /docker-volumes/etc/letsencrypt/live/vraku.work/fullchain.pem:/etc/letsencrypt/live/vraku.work/fullchain.pem
-      - /docker-volumes/etc/letsencrypt/live/vraku.work/privkey.pem:/etc/letsencrypt/live/vraku.work/privkey.pem
+      - /docker-volumes/etc/letsencrypt/live/yongzhu.work/fullchain.pem:/etc/letsencrypt/live/yongzhu.work/fullchain.pem
+      - /docker-volumes/etc/letsencrypt/live/yongzhu.work/privkey.pem:/etc/letsencrypt/live/yongzhu.work/privkey.pem
     networks:
       - docker-network
 
