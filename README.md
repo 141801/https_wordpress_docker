@@ -24,3 +24,10 @@ certonly --webroot \
 * cd nginx_mysql_wordpress #console2
 * chown -R www-data:www-data  ./wordpress  #console2
 * docker-compose up #console2
+
+
+
+## debug
+
+### mysql cannot start
+df命令查看系统硬盘，可能因为已经100%用光了
