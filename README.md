@@ -27,7 +27,11 @@ certonly --webroot \
 
 
 
+## debain10 docker install
+* https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-debian-10
+
 ## debug
 
 ### mysql cannot start
 df命令查看系统硬盘，可能因为已经100%用光了
+
