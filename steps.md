@@ -3,6 +3,6 @@
 # set ssh
 * `vi /etc/ssh/sshd_config `  
 * change `#PermitRootLogin prohibit-password` to `PermitRootLogin yes`  
-* passwd root
+* `passwd root`
 * `systemctl restart sshd`
  
