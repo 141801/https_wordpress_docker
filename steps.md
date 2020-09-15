@@ -26,4 +26,4 @@ root@b9eae89777e6:/var/www/html# find  /usr/local/etc/  -type f |xargs grep "upl
 ```
 
 # php-pfm settings
-* /usr/local/etc/php/
+* /usr/local/etc/php/  (php.ini要手动通过2个模版copy)
