@@ -24,6 +24,9 @@ root@b9eae89777e6:/var/www/html# find  /usr/local/etc/  -type f |xargs grep "upl
 /usr/local/etc/php/php.ini-production:upload_max_filesize = 2M
 /usr/local/etc/php/php.ini-development:upload_max_filesize = 2M
 ```
+以下两个要一起修改才有作用
+* /usr/local/etc/php/php.ini-production:post_buffer_size 
+* /usr/local/etc/php/php.ini-production:upload_max_filesize
 
 # php-pfm settings
 * /usr/local/etc/php/  (php.ini要手动通过2个模版copy)
