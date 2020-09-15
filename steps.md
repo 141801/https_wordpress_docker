@@ -30,3 +30,6 @@ root@b9eae89777e6:/var/www/html# find  /usr/local/etc/  -type f |xargs grep "upl
 
 # php-pfm settings
 * /usr/local/etc/php/  (php.ini要手动通过2个模版copy)
+
+## add cdn 
+* https://navi.onamae.com/domain/setting/ns/22186144  mapreduce.lz@gmail.com  Zl_666888
