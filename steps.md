@@ -24,3 +24,6 @@ root@b9eae89777e6:/var/www/html# find  /usr/local/etc/  -type f |xargs grep "upl
 /usr/local/etc/php/php.ini-production:upload_max_filesize = 2M
 /usr/local/etc/php/php.ini-development:upload_max_filesize = 2M
 ```
+
+# php-pfm settings
+* /usr/local/etc/php/
