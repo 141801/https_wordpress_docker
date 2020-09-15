@@ -10,3 +10,16 @@
 
 # Install docker-compose
 * https://docs.docker.com/compose/install/
+
+
+# upload 2M size problem
+```
+docker exec -it b9eae89777e6   /bin/bash
+apt-get update
+apt-get install -y vim
+```
+```
+root@b9eae89777e6:/var/www/html# find  /usr/local/etc/  -type f |xargs grep "upload_max_filesize"
+/usr/local/etc/php/php.ini-production:upload_max_filesize = 2M
+/usr/local/etc/php/php.ini-development:upload_max_filesize = 2M
+```
