@@ -17,6 +17,7 @@
 docker exec -it b9eae89777e6   /bin/bash
 apt-get update
 apt-get install -y vim
+apt-get update && apt-get install -y procps  #ps
 ```
 ```
 root@b9eae89777e6:/var/www/html# find  /usr/local/etc/  -type f |xargs grep "upload_max_filesize"
